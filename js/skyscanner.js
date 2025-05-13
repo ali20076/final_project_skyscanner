@@ -28,6 +28,41 @@ fetch('/json/lang.json')
             lg.appendChild(card)
         })
     })
+const brn = document.querySelectorAll(".brn")
+const bars = document.querySelectorAll(".bars")
+const dropdown = document.getElementsByClassName("dropdown")
 
+brn.forEach((hot)=>{
+    hot.addEventListener("click", ()=>{
+        window.location.href='html\skyscanner-hotels.html'
+    })    
+})
 
+bars.forEach((bar, index)=>{
+    bar.addEventListener("click", ()=>{
+        dropdown[index].classList.toggle("dropdown-up")
+        console.log("hello")
+    })
+})
 
+const changeable = document.querySelectorAll(".changeable")
+const inpt1 = document.querySelector(".inpt1")
+const inpt2 = document.querySelector(".inpt2")
+
+changeable.forEach((oop, index)=>{
+    oop.addEventListener("click", ()=>{
+        // inpt1.style.transform = "translateX(224px)"
+        // inpt2.style.transform = "translateX(-224px)"
+        inpt1.classList.toggle("inpt1-up")
+        inpt2.classList.toggle("inpt2-up")
+        opp.classList.toggle("changeable-up")
+    })
+})
+
+const inpt5 = document.getElementById("inpt5")
+
+inpt5.forEach((rm, index)=>{
+    rm.addEventListener("click", ()=>{
+        console.log("hello")
+    })
+})
