@@ -150,7 +150,7 @@ header{
 }
 .inpts{
     display: flex;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -161,10 +161,12 @@ header{
 }
 .inpts span{
     color: #626971;
-    position: absolute;
+    position:absolute;
     top: -20px;
+    left: 0px;
     z-index: 4;
     padding:5px ;
+    border: 1px solid;
 }
 .changeable{
     border: 3px solid #05203C;
@@ -180,28 +182,33 @@ header{
     top: 10px;
     cursor: pointer;
     z-index: 8;
-    transform: rotateY("0deg");
+}
+.fa-arrows-turn-to-dots{
+    transform: rotate(0deg);
     transition: all 0.8s ease;
 }
-.changeable-up{
-    transform: rotateY("180deg");
+.fa-arrows-turn-to-dots-up{
+    transform: rotate(360deg);
 }
 .inpts{position: relative;}
+.ipt{
+    display: flex;
+
+}
 .inpt1 input{
     transform: translateX(219px);
-    border-radius: 12px 0px 0px 12px;
 }
 .inpt1-up input{
     transform: translateX(0px);
-    border-radius: 0px;
+    border-radius:12px 0px 0px 12px;
 }
 .inpt2 input{
     transform: translateX(-219px);
-    border-radius: 0px;
+    border-radius: 12px 0px 0px 12px;
 }
 .inpt2-up input{
     transform: translateX(0px);
-    border-radius: 12px 0px 0px 12px;
+    border-radius:0px;
 }
 .inpts button{
     border-radius: 12px;
@@ -223,11 +230,10 @@ header{
     padding: 25px;
     border: none;
 }
-#inpt1{
-    border-radius: 12px 0px 0px 12px;
+.inpt1{
     border: none;
 }
-#inpt5{
+.inpt5{
     border-radius: 0px 12px 12px 0px;
     border: none;
 }
@@ -252,10 +258,9 @@ header{
 }
 /* main2 */
 .main2{
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     justify-content: center;
-    border: 1px solid #000;
     /* height: 200vh; */
 }
 .inside{
@@ -277,6 +282,7 @@ header{
     border-radius: 12px;
     transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .brn:hover{
     background-color: #5a5888;
@@ -299,6 +305,7 @@ header{
     height: 500px;
     object-fit: cover;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .sub{
     position: absolute;
@@ -495,5 +502,91 @@ footer{
 .ft-left{
     display: flex;
 }
-
-
+/* login main */
+.login{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 700px;
+    border-radius: 12px;
+    position: absolute;
+    top: 100px;
+}
+.cancel{
+    border: 1px solid;
+}
+.login img{
+    width: 30px;
+    height: 30px;
+}
+.img img{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    object-fit: cover;
+}
+.login-blur button{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 30px;
+    left: 450px;
+    background-color: #FFF;
+    border: none;
+    font-size: 25px;
+}
+.tiping{
+    padding-top: 50px;
+    padding: 50px;
+    font-family: "Kanit", sans-serif;
+}
+.tiping ul{
+    list-style: none;
+    position: relative;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tiping li{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 12px;
+    background-color: #ebebeb;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tiping li:hover{
+    background-color: #CCC;
+}
+.terms{
+    font-size: 12px;
+    color: #6d6d6d;
+}
+.terms a{
+    color: #0062ff;
+}
+.remember{
+    display: flex;
+    gap: 10px;
+}
+.login-blur{
+    position: fixed;
+    z-index: 9;
+    border: 1px solid;
+    width: 1903px;
+    height: 950px;
+    backdrop-filter: brightness(40%);
+    justify-content: center;
+}

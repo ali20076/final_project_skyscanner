@@ -28,15 +28,9 @@ fetch('/json/lang.json')
             lg.appendChild(card)
         })
     })
-const brn = document.querySelectorAll(".brn")
+
 const bars = document.querySelectorAll(".bars")
 const dropdown = document.getElementsByClassName("dropdown")
-
-brn.forEach((hot)=>{
-    hot.addEventListener("click", ()=>{
-        window.location.href='html\skyscanner-hotels.html'
-    })    
-})
 
 bars.forEach((bar, index)=>{
     bar.addEventListener("click", ()=>{
@@ -48,21 +42,46 @@ bars.forEach((bar, index)=>{
 const changeable = document.querySelectorAll(".changeable")
 const inpt1 = document.querySelector(".inpt1")
 const inpt2 = document.querySelector(".inpt2")
+const fa_arrows_turn_to_dots = document.querySelector(".fa-arrows-turn-to-dots")
 
 changeable.forEach((oop, index)=>{
     oop.addEventListener("click", ()=>{
-        // inpt1.style.transform = "translateX(224px)"
-        // inpt2.style.transform = "translateX(-224px)"
         inpt1.classList.toggle("inpt1-up")
         inpt2.classList.toggle("inpt2-up")
-        opp.classList.toggle("changeable-up")
+        fa_arrows_turn_to_dots.classList.toggle("fa-arrows-turn-to-dots-up")
     })
 })
-
-const inpt5 = document.getElementById("inpt5")
-
-inpt5.forEach((rm, index)=>{
-    rm.addEventListener("click", ()=>{
-        console.log("hello")
+const login_blur = document.querySelector(".login-blur")
+const item = document.querySelector(".item")
+login_blur.style.display = "none"
+item.addEventListener("click", ()=>{
+        login_blur.style.display = "flex"
+        const login = document.createElement("div")
+        login.className = "login"
+        login.innerHTML = `
+        <div class="img">
+        <img src="https://logos-world.net/wp-content/uploads/2022/05/Skyscanner-Logo.png">
+        </div>
+        <div class="tiping">
+            <h1>Get the full experience</h1>
+            <p>Track prices, make trip planning easier and enjoy faster booking.</p>
+            <ul>
+            <li><p>Continue with email</p></li>
+            <li><img src="https://img.freepik.com/premium-vector/circle-facebook-logotype-icon-social-media-app-network-application-popular-editorial-brand-vector-illustration_913857-373.jpg?w=740"><p>Facebook</p></li>
+            <li><img src="https://tse1.mm.bing.net/th/id/OIP.NU47ZE8R8rFbMAB4a_w3FgHaHa?cb=iwp2&rs=1&pid=ImgDetMain"><p>Google</p></li>
+            <li><img src="https://img.favpng.com/3/18/10/apple-logo-company-png-favpng-MYGe2dxxdVJS2rHncT5rkFdLr_t.jpg"><p>Apple</p></li>
+            </ul>
+            <div class="remember"><input type="checkbox"><p>Remember me</p></div>
+            <p class="terms">By continuing you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+        </div>
+        `
+        const exit = document.createElement("button")
+        exit.textContent="X"
+        login.appendChild(exit)
+        document.querySelector(".login-blur").appendChild(login)
+        exit.addEventListener("click", ()=>{
+            login.innerHTML=``
+            login.style.display = "none"
+            login_blur.style.display = "none"
+        })
     })
-})
