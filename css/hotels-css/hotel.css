@@ -8,18 +8,21 @@ header{
     background-color: #05203C;
     color: #FFF;
     justify-content: center;
-    padding-bottom:10px;
     font-family: "Noto Sans", sans-serif;
+    padding-bottom: 15px;
 }
 .logo img{
     width: 200px;
     height: 50px;
     object-fit: cover;
+    position: relative;
+    left: -10px;
 }
 .up{
     /* border: 1px solid; */
     width: 1295px;
     padding: 0px;
+    height: 130px;
 }
 .top{
     justify-content: space-between;
@@ -124,23 +127,21 @@ header ul{
     flex-direction: column;
     justify-content: center;
 }
-.a1{
-    display: flex;
-    flex-direction: column;
-}
-.a1 img{
+.inside img{
     width: 100%;
-    position: relative;
-    top: 7%;
+    position: absolute;
+    top: 140px;
+    height: 550px;
+    object-fit: cover;
 }
 .a2{
-    border: 1px solid;
+    /* border: 1px solid; */
     padding-top: 30px;
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    width: 100%;
     justify-content: center;
-    position: relative;
-    top: 60px;
+    top: 40px;
 }
 .home{
     display: flex;
@@ -153,13 +154,45 @@ header ul{
     border: 1px solid;
     width: 40px;
 }
-.a2 span{
+.a2-box{
     display: flex;
-    border: 1px solid;
-    width: 300px;
+    /* border: 1px solid; */
+    width: 1200px;
     align-items: center;
     gap: 10px;
 }
 .a2 i, .a2 p{
     opacity: 0.5;
+}
+.a3{
+    /* border: 1px solid; */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 40px;
+}
+.a3-boxes{
+    display: flex;
+}
+.inside h1{
+    z-index: 8;
+    color: #FFF;
+    font-size: 65px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.search-main{
+    border: 1px solid;
+    z-index: 8;
+    /* moment 2 */
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.subarea{
+    border: 1px solid;
+    display: flex;
+}
+.subarea ul{
+    list-style: none;
 }
