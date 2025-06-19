@@ -233,6 +233,9 @@ header ul{
 .subarea ul{
     list-style: none;
 }
+.searching{
+    border-right: 1px solid #b9b9b9;
+}
 .inpts ul{
     display: flex;
     position: absolute;
@@ -278,23 +281,56 @@ header ul{
 input[type="date"]{
     border-radius: 0px;
 }
-.subtitles{
-    border: 1px solid;
+.subtitles ul{
+    /* border: 1px solid red; */
     display: flex;
-    gap: 190px;
-    position: relative;
-    color: #000 ;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color: #FFF;
     padding: 0px;
     margin: 0px;
     font-family: "Noto Sans", sans-serif;
     font-size: 12px;
     font-weight: 700;
 }
-.subtitles li{
-    width: 150px;
+/* .where, .in, .on, .guest{
     border: 1px solid;
+} */
+.where{
+    width: 590px;
+}
+.in{
+    width: 180px;
+}
+.on{
+    width: 180px;
+}
+.guest{
+    width: 230px;
 }
 .down{
-    border: 1px solid;
     position: relative;
+}
+.down button{
+    border: none;
+    position: absolute;
+    top: 110px;
+    left: 85%;
+    border-radius: 12px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    width: 150px;
+    height: 40px;
+    background-color: #0062E3;
+    cursor: pointer;
+}
+.down a{
+    position: relative;
+    text-decoration: none;
+    color: #FFF;
+}
+/* main2 */
+.main2{
+    border: 1px solid;
 }
