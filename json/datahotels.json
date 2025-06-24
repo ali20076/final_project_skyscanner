@@ -1,0 +1,44 @@
+{
+  "hotels": [
+    {
+      "name": "The Grand Palace Hotel",
+      "location": "Istanbul, Turkey",
+      "price_per_night": 89,
+      "rating": 4.5,
+      "image_url": "https://example.com/images/hotel1.jpg",
+      "amenities": ["Wi-Fi", "Breakfast included", "Pool", "Air conditioning"]
+    },
+    {
+      "name": "Seaside Escape Resort",
+      "location": "Antalya, Turkey",
+      "price_per_night": 120,
+      "rating": 4.7,
+      "image_url": "https://example.com/images/hotel2.jpg",
+      "amenities": ["Wi-Fi", "Beachfront", "Spa", "All-inclusive"]
+    },
+    {
+      "name": "City Central Inn",
+      "location": "Baku, Azerbaijan",
+      "price_per_night": 75,
+      "rating": 4.3,
+      "image_url": "https://example.com/images/hotel3.jpg",
+      "amenities": ["Wi-Fi", "Free parking", "Gym", "Restaurant"]
+    },
+    {
+      "name": "Mountain View Lodge",
+      "location": "Tbilisi, Georgia",
+      "price_per_night": 65,
+      "rating": 4.2,
+      "image_url": "https://example.com/images/hotel4.jpg",
+      "amenities": ["Wi-Fi", "Mountain view", "Breakfast included", "Pet-friendly"]
+    },
+    {
+      "name": "Luxury Sky Tower",
+      "location": "Dubai, UAE",
+      "price_per_night": 210,
+      "rating": 4.8,
+      "image_url": "https://example.com/images/hotel5.jpg",
+      "amenities": ["Wi-Fi", "Infinity pool", "Rooftop bar", "Fitness center"]
+    }
+  ]
+}

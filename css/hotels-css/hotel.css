@@ -332,5 +332,103 @@ input[type="date"]{
 }
 /* main2 */
 .main2{
+    /* border: 1px solid; */
+    width: 100%;
+    position: absolute;
+    top: 700px;
+    display: flex;
+    justify-content: center;
+}
+.inside-main2{
+    /* border: 1px solid; */
+    width: 1245px;
+}
+.tags{
+    /* border: 1px solid; */
+    padding-top: 20px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.tags i, .tags p{
+    opacity: 0.5;
+}
+.tags a{
+    text-decoration: none;
+    color: #000;
+    font-family: "Noto Sans", sans-serif;
+}
+.ahover:hover .line{
     border: 1px solid;
+    width: 100%;
+}
+.prs{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ahover{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cards, .card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: "Noto Sans", sans-serif;
+    flex-wrap: nowrap;
+}
+.card i{
+    font-size: 20px;
+}
+.cards{
+    padding-bottom: 60px;
+}
+.brands{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+.brands h1{
+    padding-bottom: 15px;
+}
+.card img{
+    width: 137px;
+    object-fit: cover;
+    height: 55px;
+    padding-right: 10px;
+}
+.hotels-select{
+    border: 1px solid;
+    font-family: "Noto Sans", sans-serif;
+}
+.ttl{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ttl p, .ttl h1{
+    margin: 0px;
+}
+.cities{
+    padding-top: 25px;
+    border: 1px solid;
+    display: flex;
+    gap: 10px;
+}
+.city{
+    border: 1px solid #b9b9b9;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.city:hover{
+    border: 1px solid #000;
 }
