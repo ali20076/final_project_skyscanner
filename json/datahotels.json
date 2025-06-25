@@ -1,44 +1,52 @@
 {
   "hotels": [
     {
-      "name": "The Grand Palace Hotel",
-      "location": "Istanbul, Turkey",
-      "price_per_night": 89,
-      "rating": 4.5,
-      "image_url": "https://example.com/images/hotel1.jpg",
-      "amenities": ["Wi-Fi", "Breakfast included", "Pool", "Air conditioning"]
+      "name": "Sea Pearl Hotel",
+      "distations": 4.64,
+      "price_per_night": 31,
+      "rating": 2.4,
+      "rating_level":"Average",
+      "image_url": "../img/image-hotels/sea_pearl.webp"
     },
     {
-      "name": "Seaside Escape Resort",
-      "location": "Antalya, Turkey",
-      "price_per_night": 120,
-      "rating": 4.7,
-      "image_url": "https://example.com/images/hotel2.jpg",
-      "amenities": ["Wi-Fi", "Beachfront", "Spa", "All-inclusive"]
-    },
-    {
-      "name": "City Central Inn",
-      "location": "Baku, Azerbaijan",
-      "price_per_night": 75,
-      "rating": 4.3,
-      "image_url": "https://example.com/images/hotel3.jpg",
-      "amenities": ["Wi-Fi", "Free parking", "Gym", "Restaurant"]
-    },
-    {
-      "name": "Mountain View Lodge",
-      "location": "Tbilisi, Georgia",
-      "price_per_night": 65,
+      "name": "Turkey Hotel - Free Massage",
+      "distations": 5.61,
+      "price_per_night": 31,
       "rating": 4.2,
-      "image_url": "https://example.com/images/hotel4.jpg",
-      "amenities": ["Wi-Fi", "Mountain view", "Breakfast included", "Pet-friendly"]
+      "rating_level":"Very good",
+      "image_url": "../img/image-hotels/turkey-massage.webp"
     },
     {
-      "name": "Luxury Sky Tower",
-      "location": "Dubai, UAE",
-      "price_per_night": 210,
-      "rating": 4.8,
-      "image_url": "https://example.com/images/hotel5.jpg",
-      "amenities": ["Wi-Fi", "Infinity pool", "Rooftop bar", "Fitness center"]
+      "name": "Theatrum Hotel Baku",
+      "distations": 0.38,
+      "price_per_night": 75,
+      "rating": 3.9,
+      "rating_level":"Good",
+      "image_url": "../img/image-hotels/theatrum.webp"
+    },
+    {
+      "name": "Fairmont BAku - Flame Towers",
+      "distations": 1.45,
+      "price_per_night": 394,
+      "rating": 4.6,
+      "rating_level":"Excellent",
+      "image_url": "../img/image-hotels/fairmont-baku.webp"
+    },
+    {
+      "name": "Badamdar Hotel and Residences",
+      "distations": 3.28,
+      "price_per_night": 124,
+      "rating": 4.5,
+      "rating_level":"Excellent",
+      "image_url": "../img/image-hotels/badamdar-baku.webp"
+    },
+    {
+      "name": "Hilton Baku",
+      "distations": 1.14,
+      "price_per_night": 254,
+      "rating": 4.5,
+      "rating_level":"Excellent",
+      "image_url": "../img/image-hotels/hiltonbaku.webp"
     }
   ]
 }
