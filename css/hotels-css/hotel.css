@@ -1,6 +1,10 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0px;
     padding: 0px;
+    
 }
 header{
     border: 1px solid #05203C;
@@ -508,4 +512,30 @@ input[type="date"]{
 }
 .from5{
     font-size: 12px;
+}
+.btns-clicker{
+    margin-top: 30px;
+    padding: 10px;
+    /* border: 1px solid; */
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns-clicker button{
+    border: none;
+    background-color: #FFF;
+}
+.button-right i, .button-left i{
+    color: #0062E3;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* .button-left, .button-right, .scroll-balls{
+    border: 1px solid;
+} */
+.scroll-balls{
+    display: flex;
+    gap: 8px;
+    font-size: 8px;
 }

@@ -1,0 +1,78 @@
+{
+  "title": "Hotels for fab city breaks",
+  "hotels":
+  [
+    {
+      "name": "City Luxe Hotel",
+      "city": "London, UK",
+      "price_per_night": 150,
+      "rating": 4.6,
+      "image_url": "https://example.com/images/city_luxe_london.jpg",
+      "amenities": ["Wi-Fi", "Breakfast included", "Gym", "City view"]
+    },
+    {
+      "name": "Uptown Chic Suites",
+      "city": "New York, USA",
+      "price_per_night": 220,
+      "rating": 4.7,
+      "image_url": "https://example.com/images/uptown_chic_nyc.jpg",
+      "amenities": ["Wi‑Fi", "Rooftop Bar", "Spa", "Fitness center"]
+    },
+    {
+      "name": "Seine Riverside Inn",
+      "city": "Paris, France",
+      "price_per_night": 180,
+      "rating": 4.5,
+      "image_url": "https://example.com/images/seine_riverside_paris.jpg",
+      "amenities": ["Wi‑Fi", "River view", "Room service", "Breakfast buffet"]
+    },
+    {
+      "name": "Historic Plaza Hotel",
+      "city": "Rome, Italy",
+      "price_per_night": 140,
+      "rating": 4.4,
+      "image_url": "https://example.com/images/historic_plaza_rome.jpg",
+      "amenities": ["Wi‑Fi", "Historic building", "Breakfast included", "Air conditioning"]
+    },
+    {
+      "name": "Berlin Art Stay",
+      "city": "Berlin, Germany",
+      "price_per_night": 130,
+      "rating": 4.6,
+      "image_url": "https://example.com/images/berlin_art_stay.jpg",
+      "amenities": ["Wi‑Fi", "Gallery lobby", "Bar", "Breakfast included"]
+    },
+    {
+      "name": "Downtown Skyline Hotel",
+      "city": "Tokyo, Japan",
+      "price_per_night": 200,
+      "rating": 4.8,
+      "image_url": "https://example.com/images/downtown_skyline_tokyo.jpg",
+      "amenities": ["Wi‑Fi", "Skyline view", "Lounge", "Onsen access"]
+    },
+    {
+      "name": "Gothic Quarter Boutique",
+      "city": "Barcelona, Spain",
+      "price_per_night": 145,
+      "rating": 4.5,
+      "image_url": "https://example.com/images/gothic_quarter_barcelona.jpg",
+      "amenities": ["Wi‑Fi", "Historic quarters", "Rooftop terrace", "Air conditioning"]
+    },
+    {
+      "name": "Chic Riverfront Hotel",
+      "city": "Amsterdam, Netherlands",
+      "price_per_night": 160,
+      "rating": 4.7,
+      "image_url": "https://example.com/images/chic_riverfront_amsterdam.jpg",
+      "amenities": ["Wi‑Fi", "Canal view", "Bike rental", "Breakfast buffet"]
+    },
+    {
+      "name": "Modern Loft Retreat",
+      "city": "Lisbon, Portugal",
+      "price_per_night": 125,
+      "rating": 4.4,
+      "image_url": "https://example.com/images/modern_loft_lisbon.jpg",
+      "amenities": ["Wi‑Fi", "City center", "Rooftop terrace", "Air conditioning"]
+    }
+  ]
+}

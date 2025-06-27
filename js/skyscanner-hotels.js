@@ -43,3 +43,16 @@ fetch('../json/datahotels.json')
 
     })
  })
+
+const button_right = document.querySelector(".button-right")
+const button_left = document.querySelector(".button-left")
+const card = document.querySelectorAll(".hotels-card") 
+const scroll_balls = document.querySelector(".scrolls")
+const ball = document.querySelectorAll(".ball")
+
+button_right.addEventListener("click",()=>{
+    scroll_balls.scrollLeft +=2000
+})
+button_left.addEventListener("click",()=>{
+    scroll_balls.scrollLeft -=2000
+})
