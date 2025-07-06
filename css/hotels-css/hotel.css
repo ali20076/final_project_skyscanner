@@ -1,10 +1,11 @@
 *{
     scroll-behavior: smooth;
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: content-box;
 }
 body{
     margin: 0px;
     padding: 0px;
-    
 }
 header{
     border: 1px solid #05203C;
@@ -208,7 +209,7 @@ header ul{
     /* border: 1px solid; */
     width: 900px;
     position: absolute;
-    left: 340px;
+    left: 435px;
     top: 105px;
     text-align: left;
     padding-bottom: 10px;
@@ -440,8 +441,10 @@ input[type="date"]{
 .scrolls{
     /* border: 1px solid; */
     display: flex;
-    gap: 35px;
+    gap: 30px;
     overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 .hotels-card{
     border-radius: 24px;
@@ -502,7 +505,10 @@ input[type="date"]{
 .price-bolt{
     font-size: 22px;
     font-weight: 600;
-    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
 }
 .rating1, .rating2{
     font-weight: 600;
@@ -538,4 +544,89 @@ input[type="date"]{
     display: flex;
     gap: 8px;
     font-size: 8px;
+}
+.scrolls2{
+    display: flex;
+    overflow: hidden;
+    gap: 30px;
+}
+.facts{
+    padding-top: 100px;
+}
+.cards1{
+    display: flex;
+    gap: 100px;
+}
+.card1{
+    /* border: 1px solid; */
+    width: 500px;
+    padding: 10px;
+}
+.card1 p, .card1 h1{
+    padding: 0px;
+    font-family: "Lato", sans-serif;
+}
+.card1 i{
+    font-size: 30px;
+}
+.card1 h1{
+    font-size: 25px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+.card1 p{
+    margin-bottom: 0px;
+}
+.title-facts p{
+    padding-bottom: 20px;
+}
+.image-facts{
+    background-color: #EFF3F8;
+    margin-top: 150px;
+    border-radius: 12px;
+    padding: 50px;
+}
+.cards2{
+    display: flex;
+    gap: 50px;
+}
+.card2{
+    text-align: center;
+    width: 500px;
+}
+.card2 h1{
+    font-size: 25px;
+}
+.card2 img{
+    width: 200px;
+    height: 200px;
+}
+.fags{
+    border: 1px solid;
+}
+.btns-fags{
+    display: flex;
+    flex-direction: column;
+}
+.fags-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.fags-sub{
+    font-size: 20px;
+}
+.btns-fags span{
+    width: 800px;
+    cursor: pointer;
+}
+.ttx-cont{
+    display: none;
+}
+.ttx-cont-up{
+    display: block;
+}
+.btns-fags hr{
+    opacity: 0.4;
 }
