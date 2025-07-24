@@ -97,26 +97,15 @@ fetch(`../json/datahotels2.json`)
     })
  })
 
-// const button_left1 = document.getElementById("button-left-1")
-// const button_right1 = document.getElementById("button-right-1")
-// const scrollballs1 = document.getElementById("scroll-balls-1")
-// const ball1 = document.getElementById("ball-1-1")
-// const ball2 = document.getElementById("ball-1-2")
-
-// button_right1.addEventListener("click",()=>{
-//     scroll_balls1.scrollLeft +=2000
-//     console.log("hello")
-// })
-// button_left1.addEventListener("click",()=>{
-//     scroll_balls1.scrollLeft -=2000
-//     console.log("hello")
-// })
-
-const pokky = document.querySelector(".tuglle")
+const pokky = document.querySelectorAll(".tuglle")
 const fags_sub = document.querySelectorAll(".fags-sub")
-const ttx_cont = document.querySelector(".ttx-cont")
+const ttx_cont = document.querySelectorAll(".ttx-cont")
+const arrow = document.querySelectorAll(".fa-angle-up")
 
-pokky.addEventListener("click", ()=>{
+fags_sub.forEach((frr, index)=>{
+    frr.addEventListener("click", ()=>{
+    pokky[index].classList.toggle("tuglle-up")
+    arrow[index].classList.toggle("fa-angle-down")
     console.log("hello")
-    ttx_cont.classList.toggle("ttx-cont-up")
+    })
 })

@@ -601,9 +601,9 @@ input[type="date"]{
     width: 200px;
     height: 200px;
 }
-.fags{
+/* .fags{
     border: 1px solid;
-}
+} */
 .btns-fags{
     display: flex;
     flex-direction: column;
@@ -621,12 +621,25 @@ input[type="date"]{
     width: 800px;
     cursor: pointer;
 }
-.ttx-cont{
+.tuglle{
+    overflow: hidden;
+    /* border: 1px solid; */
+    transition: all 0.2s ease;
+    height: 65px;
+    border-bottom: 1px solid #ccc;
+}
+.tuglle-up{
+    height: 150px;
+}
+/* .ttx-cont{
     display: none;
 }
 .ttx-cont-up{
     display: block;
-}
+} */
 .btns-fags hr{
     opacity: 0.4;
+}
+.fa-angle-down{
+    transform: rotateX(180deg);
 }
