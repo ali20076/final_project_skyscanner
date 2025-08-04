@@ -106,6 +106,51 @@ fags_sub.forEach((frr, index)=>{
     frr.addEventListener("click", ()=>{
     pokky[index].classList.toggle("tuglle-up")
     arrow[index].classList.toggle("fa-angle-down")
-    console.log("hello")
     })
 })
+
+
+fetch('../json/titles.json')
+ .then(response => response.json())
+ .then(titles =>{
+    titles.brands.forEach((item)=>{
+        const opz = document.querySelector(".opz")
+        const balls = document.querySelector(".balls")
+        const select_titles = document.querySelector(".select-titles")
+        const fa_circle = document.querySelectorAll(".fa-circle")
+        const fa_angle_up = document.querySelectorAll(".fa-angle-up")
+        const open_files = document.querySelector(".open-files")
+
+        const card_span = document.createElement("div")
+        card_span.className = "option-select-type"
+        card_span.classList.add("open_files")
+        card_span.innerHTML = `
+            <div class="str">
+            <span>${item.column1}</span>
+            <span>${item.column2}</span>
+            <span>${item.column3}</span>
+            <span>${item.column4}</span>
+            <span>${item.column5}</span>
+            <span>${item.column6}</span>
+            </div>
+        `
+        open_files.appendChild(card_span)
+
+        function left(){
+            // console.log("left")
+        }
+        function right(){
+            // console.log("right")
+        }
+        fa_angle_up.forEach((icon, index)=>{
+            icon.addEventListener("click",()=>{
+                if(index==6){
+                    left()
+                }
+                else{
+                    right()
+                }
+            })
+        })
+    })
+ })

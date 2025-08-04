@@ -643,3 +643,38 @@ input[type="date"]{
 .fa-angle-down{
     transform: rotateX(180deg);
 }
+.stage1{
+    margin-top: 100px;
+    font-family: Skyscanner Relative, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.stage1 span{
+    font-size: 15px;
+}
+/* buttons main works and master pushes */
+.btns-stage1{
+    display: flex;
+    gap: 10px;
+}
+.btns-stage1 button{
+    padding: 8.5px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.btns-stage1 button:hover{
+    border: 1px solid #000;
+}
+.open-files{
+    display: flex;
+    overflow: hidden;
+    border: 1px solid;
+}
+.str{
+    display: flex;
+    flex-direction: column;
+}
+.option-select-type{
+    display: flex;
+    border: 1px solid;
+}

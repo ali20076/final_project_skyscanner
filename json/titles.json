@@ -1,0 +1,47 @@
+{
+   "brands":
+[
+{
+    "column1":"Cheap 4-star hotels deals in Paris",
+    "column2":"Book 4-star hotels deals in Milan",
+    "column3":"Book 4-star hotels in Amsterdam",
+    "column4":"Cheap 4-star hotels deals in New York",
+    "column5":"Cheap 4-star hotels deals in Dublin",
+    "column6":"Cheap 4-star hotels deals in Barcelona"
+},
+{
+    "column1":"Book 4-star hotels deals in London",
+    "column2":"Book 4-star hotels deals in Dubai",
+    "column3":"Cheap 4-star hotels in Amsterdam",
+    "column4":"Cheap 4-star hotels deals in Banghok",
+    "column5":"Cheap 5-star hotels deals in Dublin",
+    "column6":"Book 5-star hotels deals in New York"
+},
+{
+    "column1":"Book 5-star hotels deals in Barcelona",
+    "column2":"Book 5-star hotels deals in Dubai",
+    "column3":"Book 5-star hotels in Manchester",
+    "column4":"5-star hotels deals in Banghok",
+    "column5":"Cheap 5-star hotels deals in Amsterdam",
+    "column6":"5-star hotels deals in London"
+},
+{
+    "column1":"Cheap 5-star hotels deals in Paris",
+    "column2":"Book 5-star hotels deals in Milan",
+    "column3":"Cheap 3-star hotels in New York",
+    "column4":"Cheap 3-star hotels deals in Paris",
+    "column5":"Book 3-star hotels deals in Milan",
+    "column6":"Book 3-star hotels deals in Banghok"
+},
+{
+    "column1":"3-star hotels deals in Barcelona",
+    "column2":"3-star hotels deals in Dubai",
+    "column3":"Cheap 3-star hotels in Manchester",
+    "column4":"Cheap 3-star hotels deals in Dublin",
+    "column5":"3-star hotels deals in London",
+    "column6":"Cheap 3-star hotels deals in Amsterdam"
+}
+
+]
+
+}
