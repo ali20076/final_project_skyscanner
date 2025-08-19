@@ -7,7 +7,7 @@
       "city": "London, UK",
       "price_per_night": 150,
       "rating": 4.6,
-      "image_url": "https://example.com/images/city_luxe_london.jpg",
+      "image_url": "../img/image-hotels/london.webp",
       "amenities": ["Wi-Fi", "Breakfast included", "Gym", "City view"]
     },
     {
@@ -15,7 +15,7 @@
       "city": "New York, USA",
       "price_per_night": 220,
       "rating": 4.7,
-      "image_url": "https://example.com/images/uptown_chic_nyc.jpg",
+      "image_url": "../img/image-hotels/theatrum.webp",
       "amenities": ["Wi‑Fi", "Rooftop Bar", "Spa", "Fitness center"]
     },
     {
@@ -23,7 +23,7 @@
       "city": "Paris, France",
       "price_per_night": 180,
       "rating": 4.5,
-      "image_url": "https://example.com/images/seine_riverside_paris.jpg",
+      "image_url": "../img/image-hotels/turkey-massage.webp",
       "amenities": ["Wi‑Fi", "River view", "Room service", "Breakfast buffet"]
     },
     {
@@ -31,7 +31,7 @@
       "city": "Rome, Italy",
       "price_per_night": 140,
       "rating": 4.4,
-      "image_url": "https://example.com/images/historic_plaza_rome.jpg",
+      "image_url": "../img/image-hotels/rome.webp",
       "amenities": ["Wi‑Fi", "Historic building", "Breakfast included", "Air conditioning"]
     },
     {
@@ -39,7 +39,7 @@
       "city": "Berlin, Germany",
       "price_per_night": 130,
       "rating": 4.6,
-      "image_url": "https://example.com/images/berlin_art_stay.jpg",
+      "image_url": "../img/image-hotels/sea_pearl.webp",
       "amenities": ["Wi‑Fi", "Gallery lobby", "Bar", "Breakfast included"]
     },
     {
@@ -47,7 +47,7 @@
       "city": "Tokyo, Japan",
       "price_per_night": 200,
       "rating": 4.8,
-      "image_url": "https://example.com/images/downtown_skyline_tokyo.jpg",
+      "image_url": "../img/image-hotels/tbilisi.webp",
       "amenities": ["Wi‑Fi", "Skyline view", "Lounge", "Onsen access"]
     },
     {
@@ -55,7 +55,7 @@
       "city": "Barcelona, Spain",
       "price_per_night": 145,
       "rating": 4.5,
-      "image_url": "https://example.com/images/gothic_quarter_barcelona.jpg",
+      "image_url": "../img/image-hotels/izmir.webp",
       "amenities": ["Wi‑Fi", "Historic quarters", "Rooftop terrace", "Air conditioning"]
     },
     {
@@ -63,7 +63,7 @@
       "city": "Amsterdam, Netherlands",
       "price_per_night": 160,
       "rating": 4.7,
-      "image_url": "https://example.com/images/chic_riverfront_amsterdam.jpg",
+      "image_url": "../img/image-hotels/instanbul.webp",
       "amenities": ["Wi‑Fi", "Canal view", "Bike rental", "Breakfast buffet"]
     },
     {
@@ -71,7 +71,7 @@
       "city": "Lisbon, Portugal",
       "price_per_night": 125,
       "rating": 4.4,
-      "image_url": "https://example.com/images/modern_loft_lisbon.jpg",
+      "image_url": "../img/image-hotels/hiltonbaku.webp",
       "amenities": ["Wi‑Fi", "City center", "Rooftop terrace", "Air conditioning"]
     }
   ]
