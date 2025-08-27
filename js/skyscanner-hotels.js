@@ -86,42 +86,44 @@ fetch(`../json/datahotels2.json`)
  })
 
 const btns_clicker = document.querySelectorAll(".btns-clicker")
-const button_right = document.querySelectorAll(".button-right")
-const button_left = document.querySelectorAll(".button-left")
+const button_right = document.querySelector(".button-right")
+const button_left = document.querySelector(".button-left")
+const button_left1 = document.querySelector(".button-left1")
+const button_right1 = document.querySelector(".button-right1")
 const card = document.querySelectorAll(".hotels-card") 
 const scroll_balls = document.querySelector(".scrolls")
+const scroll_balls1 = document.querySelector(".scrolls2")
 const ball = document.querySelectorAll(".ball")
 
 function updateButtons() {
     const maxScroll = scroll_balls.scrollWidth - scroll_balls.clientWidth
-    button_left.forEach((left) => {
-        if (scroll_balls.scrollLeft <= 0) {
-            left.style.opacity = "0.2"
+        if (scroll_balls.scrollLeft <= 2) {
+            button_left.style.opacity = "0.2"
         } else {
-            left.style.opacity = "1"
+            button_left.style.opacity = "1"
         }
-    })
-    button_right.forEach((right) => {
         if (scroll_balls.scrollLeft >= maxScroll) {
-            right.style.opacity = "0.2"
+            button_right.style.opacity = "0.2"
         } else {
-            right.style.opacity = "1"
+            button_right.style.opacity = "1"
         }
-    })
 }
-
-button_left.forEach((left)=>{
-    left.addEventListener("click",()=>{
+    // first-type
+    button_left.addEventListener("click",()=>{
     scroll_balls.scrollLeft -=2100
     updateButtons()
-})
-})
-button_right.forEach((right)=>{
-    right.addEventListener("click",()=>{
+    })
+    button_right.addEventListener("click",()=>{
     scroll_balls.scrollLeft +=2100
     updateButtons()
-})
-})
+    })
+    // second-type
+    button_left1.addEventListener("click",()=>{
+    scroll_balls1.scrollLeft -=2100
+    })
+    button_right1.addEventListener("click",()=>{
+    scroll_balls1.scrollLeft +=2100
+    })
 // end process of scroll
 const pokky = document.querySelectorAll(".tuglle")
 const fags_sub = document.querySelectorAll(".fags-sub")
