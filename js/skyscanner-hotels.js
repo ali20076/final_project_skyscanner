@@ -44,18 +44,6 @@ fetch('../json/datahotels.json')
     })
  })
  
-const button_right = document.querySelector(".button-right")
-const button_left = document.querySelector(".button-left")
-const card = document.querySelectorAll(".hotels-card") 
-const scroll_balls = document.querySelector(".scrolls")
-const ball = document.querySelectorAll(".ball")
-
-button_right.addEventListener("click",()=>{
-    scroll_balls.scrollLeft +=2100
-})
-button_left.addEventListener("click",()=>{
-    scroll_balls.scrollLeft -=2100
-})
 
 fetch(`../json/datahotels2.json`)
  .then(response => response.json())
@@ -97,6 +85,44 @@ fetch(`../json/datahotels2.json`)
     })
  })
 
+const btns_clicker = document.querySelectorAll(".btns-clicker")
+const button_right = document.querySelectorAll(".button-right")
+const button_left = document.querySelectorAll(".button-left")
+const card = document.querySelectorAll(".hotels-card") 
+const scroll_balls = document.querySelector(".scrolls")
+const ball = document.querySelectorAll(".ball")
+
+function updateButtons() {
+    const maxScroll = scroll_balls.scrollWidth - scroll_balls.clientWidth
+    button_left.forEach((left) => {
+        if (scroll_balls.scrollLeft <= 0) {
+            left.style.opacity = "0.2"
+        } else {
+            left.style.opacity = "1"
+        }
+    })
+    button_right.forEach((right) => {
+        if (scroll_balls.scrollLeft >= maxScroll) {
+            right.style.opacity = "0.2"
+        } else {
+            right.style.opacity = "1"
+        }
+    })
+}
+
+button_left.forEach((left)=>{
+    left.addEventListener("click",()=>{
+    scroll_balls.scrollLeft -=2100
+    updateButtons()
+})
+})
+button_right.forEach((right)=>{
+    right.addEventListener("click",()=>{
+    scroll_balls.scrollLeft +=2100
+    updateButtons()
+})
+})
+// end process of scroll
 const pokky = document.querySelectorAll(".tuglle")
 const fags_sub = document.querySelectorAll(".fags-sub")
 const ttx_cont = document.querySelectorAll(".ttx-cont")
