@@ -154,12 +154,16 @@ fetch('../json/titles.json')
         card_span.classList.add("open_files")
         card_span.innerHTML = `
             <div class="str">
+            <div class="column1">
             <span>${item.column1}</span>
             <span>${item.column2}</span>
             <span>${item.column3}</span>
+            </div>
+            <div class="column2">
             <span>${item.column4}</span>
             <span>${item.column5}</span>
             <span>${item.column6}</span>
+            </div>
             </div>
         `
         open_files.appendChild(card_span)
@@ -182,4 +186,32 @@ fetch('../json/titles.json')
         })
     })
  })
+
+ const login = document.querySelectorAll(".login")
+ const dropdown_login = document.querySelector(".dropdown-login")
+ const close_login = document.querySelectorAll(".close")
+
+ function openLogin() {
+  const modal = document.querySelector(".mike");
+  modal.style.display = "block";
+  dropdown_login.style.display="block"
+  document.body.style.overflow = "hidden";
+}
+function closeLogin() {
+  const modal = document.querySelector(".mike");
+  modal.style.display = "none";
+  dropdown_login.style.display="none"
+  document.body.style.overflow = "";
+}
+
+login.forEach((log)=>{
+    log.addEventListener("click",()=>{
+        openLogin()
+    })
+    close_login.forEach((cls)=>{
+        cls.addEventListener("click", ()=>{
+            closeLogin()
+        })
+    })
+})
 
