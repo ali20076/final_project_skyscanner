@@ -790,11 +790,88 @@ input[type="date"]{
 footer{
     background-color: #05203C;
     display: flex;
-    border: 1px solid;
-    padding: 100px;
-    overflow: hidden;
+    gap: 70px;
     z-index: 780;
+    padding: 100px;
+    justify-content: center;
+    font-size: 12px;
 }
 .footer-root{
-    border: 1px solid;
+    display: block;
+    position: relative;
+    top: 3850px;
+    color: #FFF;
+}
+.footer-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1224px;
+    gap: 50px;
+}
+footer button{
+    padding: 8px;
+    padding-left: 5px;
+    padding-right: 55px;
+    border-radius: 10px;
+    background-color: #1E3750;
+    border: none;
+    height: 20px;
+    font-size: 10px;
+    position: relative;
+    top: -45px;
+}
+footer a{
+    text-decoration: dashed;
+    color: #FFF;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.deco-dosh{
+    font-size: 2px;
+}
+.footer-list{
+    display: flex;
+    list-style: none;
+    gap: 150px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+}
+.list-card{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.list-card p{
+    margin: 0px;
+    display: flex;
+    gap: 300px;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+.end{
+    position: absolute;
+    top: 290px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.5px;
+}
+.list-card p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.list-card p:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
