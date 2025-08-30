@@ -116,6 +116,9 @@ header{
 .strype{
     border: 1px solid;
     padding: 100px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
 }
 .dropdown-login{
     overflow: hidden;
@@ -128,10 +131,16 @@ header{
     padding: 1150px;
     z-index: 30;
 }
-/* .dropdown-login-up{
+.dropdown-login-up{
     display: block;
     opacity: 0.6;
-} */
+    position:absolute;
+    top: 0px;
+    background-color: #000;
+    opacity: 0;
+    padding: 1150px;
+    z-index: 30;
+}
 .btn img{
     width: 20px;
 }
@@ -493,7 +502,7 @@ input[type="date"]{
     /* border: 1px solid; */
     /* width: 1240px; */
     display: flex;
-    gap: 35px;
+    gap: 10px;
     overflow: hidden;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -518,6 +527,7 @@ input[type="date"]{
 .card-img img{
     border-radius: 24px 24px 0px 0px;
     height: 125px;
+    width: 400px;
 }
 .sub{
     display: flex;
@@ -589,6 +599,11 @@ input[type="date"]{
     background-color: #FFF;
 }
 .button-right i, .button-left i{
+    color: #0062E3;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button-right1 i, .button-left1 i{
     color: #0062E3;
     font-size: 20px;
     cursor: pointer;
@@ -756,6 +771,10 @@ input[type="date"]{
 .balls i{
     font-size: 10px;
 }
+.ball, .ball1{
+    padding-left: 5px;
+    cursor: pointer;
+}
 .balls{
     display: flex;
     gap: 15px;
@@ -767,4 +786,15 @@ input[type="date"]{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+footer{
+    background-color: #05203C;
+    display: flex;
+    border: 1px solid;
+    padding: 100px;
+    overflow: hidden;
+    z-index: 780;
+}
+.footer-root{
+    border: 1px solid;
 }

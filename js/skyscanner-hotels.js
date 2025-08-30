@@ -94,6 +94,7 @@ const card = document.querySelectorAll(".hotels-card")
 const scroll_balls = document.querySelector(".scrolls")
 const scroll_balls1 = document.querySelector(".scrolls2")
 const ball = document.querySelectorAll(".ball")
+const ball1 = document.querySelectorAll(".ball1")
 
 function updateButtons() {
     const maxScroll = scroll_balls.scrollWidth - scroll_balls.clientWidth
@@ -108,6 +109,19 @@ function updateButtons() {
             button_right.style.opacity = "1"
         }
 }
+function updateButtons1() {
+    const maxScroll = scroll_balls1.scrollWidth - scroll_balls1.clientWidth
+        if (scroll_balls1.scrollLeft <= 2) {
+            button_left1.style.opacity = "0.2"
+        } else {
+            button_left1.style.opacity = "1"
+        }
+        if (scroll_balls1.scrollLeft >= maxScroll) {
+            button_right1.style.opacity = "0.2"
+        } else {
+            button_right1.style.opacity = "1"
+        }
+}
     // first-type
     button_left.addEventListener("click",()=>{
     scroll_balls.scrollLeft -=2100
@@ -120,10 +134,39 @@ function updateButtons() {
     // second-type
     button_left1.addEventListener("click",()=>{
     scroll_balls1.scrollLeft -=2100
+    updateButtons1()
     })
     button_right1.addEventListener("click",()=>{
     scroll_balls1.scrollLeft +=2100
+    updateButtons1()
     })
+
+    ball.forEach((bll, index)=>{
+        bll.addEventListener("click", ()=>{
+            if(index === 0){
+                scroll_balls.scrollLeft -=2100
+                bll.style.opacity="0.5"
+            }
+            else{
+                scroll_balls.scrollLeft +=2100
+                bll.style.opacity="1"
+            }
+        })
+    })
+
+    ball1.forEach((bll1, index)=>{
+        bll1.addEventListener("click", ()=>{
+            if(index === 0){
+                scroll_balls1.scrollLeft -=2100
+                bll1.style.opacity="0.5"
+            }
+            else{
+                scroll_balls1.scrollLeft +=2100
+                bll1.style.opacity="1"
+            }
+        })
+    })
+
 // end process of scroll
 const pokky = document.querySelectorAll(".tuglle")
 const fags_sub = document.querySelectorAll(".fags-sub")
@@ -167,51 +210,36 @@ fetch('../json/titles.json')
             </div>
         `
         open_files.appendChild(card_span)
-
-        function left(){
-            // console.log("left")
-        }
-        function right(){
-            // console.log("right")
-        }
-        fa_angle_up.forEach((icon, index)=>{
-            icon.addEventListener("click",()=>{
-                if(index==6){
-                    left()
-                }
-                else{
-                    right()
-                }
-            })
-        })
     })
  })
 
  const login = document.querySelectorAll(".login")
  const dropdown_login = document.querySelector(".dropdown-login")
  const close_login = document.querySelectorAll(".close")
+ const strype = document.querySelector(".strype")
 
  function openLogin() {
   const modal = document.querySelector(".mike");
   modal.style.display = "block";
-  dropdown_login.style.display="block"
+  dropdown_login.classList.toggle("dropdown-login-up")
   document.body.style.overflow = "hidden";
+  strype.style.display="block"
 }
 function closeLogin() {
   const modal = document.querySelector(".mike");
   modal.style.display = "none";
-  dropdown_login.style.display="none"
+  dropdown_login.classList.toggle("dropdown-login")
   document.body.style.overflow = "";
+  strype.style.display="none"
 }
 
 login.forEach((log)=>{
     log.addEventListener("click",()=>{
         openLogin()
     })
-    close_login.forEach((cls)=>{
-        cls.addEventListener("click", ()=>{
-            closeLogin()
-        })
+})
+close_login.forEach((cls)=>{
+    cls.addEventListener("click", ()=>{
+        closeLogin()
     })
 })
-
