@@ -243,3 +243,15 @@ close_login.forEach((cls)=>{
         closeLogin()
     })
 })
+//footer settings
+
+const dropdown_footer = document.querySelector(".dropdown-footer")
+const menu_item = document.querySelectorAll(".menu-item")
+const menu_link = document.querySelectorAll(".menu-link")
+const list_card = document.querySelectorAll(".list-card")
+
+menu_item.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        dropdown_footer.classList.toggle("dropdown-footer-up")
+    })
+})

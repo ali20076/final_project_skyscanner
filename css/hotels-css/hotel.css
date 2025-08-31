@@ -819,7 +819,7 @@ footer button{
     height: 20px;
     font-size: 10px;
     position: relative;
-    top: -45px;
+    top: -75px;
     cursor: pointer;
 }
 footer button:hover{
@@ -843,22 +843,19 @@ footer a{
     font-weight: 700;
     font-family: "Lato", sans-serif;
 }
-.list-card{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-.list-card p{
+.list-card p, .list-card a{
     margin: 0px;
-    display: flex;
-    gap: 300px;
-    justify-content: space-between;
     position: relative;
+}
+.list-card span{
+    display: flex;
+    justify-content: space-between;
+    gap: 295px;
     cursor: pointer;
 }
 .end{
     position: absolute;
-    top: 290px;
+    top: 360px;
     font-size: 14px;
     font-family: "Lato", sans-serif;
     letter-spacing: 0.5px;
@@ -879,3 +876,44 @@ footer a{
   transform: scaleX(1);
   transform-origin: left;
 }
+.exclude{
+    content: none;
+}
+.list-card {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    flex-direction: column;
+}
+.list-card > div {
+    position: relative;
+}
+.menu-item{
+    position: relative;
+}
+.dropdown-footer{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid #ccc;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: column;
+}
+.dropdown-footer-up{
+    display: block;
+}
+.list-card > div:hover .dropdown-footer {
+    display: flex;
+}
+.list-card > div:hover .fa-minus {
+    display: inline;
+}
+.list-card > div:hover .fa-plus {
+    display: none;
+}
+
+
