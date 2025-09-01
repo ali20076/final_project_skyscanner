@@ -245,13 +245,15 @@ close_login.forEach((cls)=>{
 })
 //footer settings
 
-const dropdown_footer = document.querySelector(".dropdown-footer")
+const dropdown_footer = document.querySelectorAll(".dropdown-footer")
 const menu_item = document.querySelectorAll(".menu-item")
 const menu_link = document.querySelectorAll(".menu-link")
 const list_card = document.querySelectorAll(".list-card")
+const fa_chevron_down = document.querySelectorAll(".fa-chevron-down")
 
-menu_item.forEach((item)=>{
+menu_item.forEach((item, index)=>{
     item.addEventListener("click", ()=>{
-        dropdown_footer.classList.toggle("dropdown-footer-up")
+        dropdown_footer[index].classList.toggle("active")
+        fa_chevron_down[index].classList.toggle("fa-chevron-up")
     })
 })

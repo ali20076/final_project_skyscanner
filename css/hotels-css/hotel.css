@@ -787,6 +787,7 @@ input[type="date"]{
     flex-direction: column;
     gap: 20px;
 }
+/* footer */
 footer{
     background-color: #05203C;
     display: flex;
@@ -794,7 +795,11 @@ footer{
     z-index: 780;
     padding: 100px;
     justify-content: center;
-    font-size: 13px;
+    font-size: 12px;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .footer-root{
     display: block;
@@ -804,22 +809,34 @@ footer{
 }
 .footer-inside{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1224px;
+    width: 1354px;
     gap: 50px;
+    /* border: 1px solid; */
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer-main{
+    display: flex;
+    /* border: 1px solid; */
+    gap: 90px;
+    width: 1224px;
 }
 footer button{
     padding: 8px;
     padding-left: 20px;
-    padding-right: 55px;
+    padding-right: 75px;
     border-radius: 10px;
     background-color: #1E3750;
     border: none;
     height: 20px;
     font-size: 10px;
-    position: relative;
-    top: -75px;
+    margin-top: 10px;
+    /* margin-left: 65px; */
     cursor: pointer;
 }
 footer button:hover{
@@ -839,9 +856,11 @@ footer a{
 .footer-list{
     display: flex;
     list-style: none;
-    gap: 150px;
+    gap: 130px;
     font-weight: 700;
     font-family: "Lato", sans-serif;
+    /* position: relative;
+    left: 150px; */
 }
 .list-card p, .list-card a{
     margin: 0px;
@@ -850,12 +869,15 @@ footer a{
 .list-card span{
     display: flex;
     justify-content: space-between;
-    gap: 295px;
     cursor: pointer;
 }
+.a-footer{
+    display: flex;
+    gap: 300px;
+}
 .end{
-    position: absolute;
-    top: 360px;
+    position: relative;
+    /* top: 315px; */
     font-size: 14px;
     font-family: "Lato", sans-serif;
     letter-spacing: 0.5px;
@@ -881,7 +903,7 @@ footer a{
 }
 .list-card {
     display: flex;
-    gap: 40px;
+    gap: 25px;
     position: relative;
     flex-direction: column;
 }
@@ -890,21 +912,37 @@ footer a{
 }
 .menu-item{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.menu-link{
+    display: flex;
 }
 .dropdown-footer{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border: 1px solid #ccc;
-    background: white;
+    display: flex;
+    gap: 20px;
+    position:relative;
+    left: 10;
+    top: 15px;
+    background: #05203C;
     list-style: none;
     padding: 10px;
-    gap: 10px;
     flex-direction: column;
+    color: #FFF;
+    height: 0px;
+    visibility: hidden;
+    transition: all 0.25s ease-out;
+    padding: 0px;
+    margin: 0px;
 }
-.dropdown-footer-up{
-    display: block;
+.dropdown-footer span{
+    padding-left: 20px;
+}
+.dropdown-footer.active{
+    /* display: block; */
+    visibility: visible;
+    height: 200px;
 }
 .list-card > div:hover .dropdown-footer {
     display: flex;
@@ -915,5 +953,9 @@ footer a{
 .list-card > div:hover .fa-plus {
     display: none;
 }
-
-
+.interactive{
+    display: flex;
+}
+.fa-chevron-up{
+    transform: rotate(180deg);
+}
