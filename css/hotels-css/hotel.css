@@ -1,12 +1,12 @@
 *{
     scroll-behavior: smooth;
-    font-family: "Lato", sans-serif;
+    font-family: "Rubik", sans-serif;
     box-sizing: content-box;
 }
 body{
     margin: 0px;
     padding: 0px;
-    font-family: "Lato", sans-serif;
+    font-family: "Rubik", sans-serif;
     box-sizing: inherit;
 }
 header{
@@ -39,10 +39,10 @@ header{
 }
 .ubuntu{
     padding-top: 100px;
-    position: relative;
-    left: -2.5%;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid; */
+    width: 1304px;
 }
 .logo img{
     width: 200px;
@@ -266,7 +266,6 @@ header ul{
     color: #FFF;
     font-size: 65px;
     text-align: center;
-    /* font-family: "Roboto Condensed", sans-serif; */
     /* border: 1px solid; */
     width: 900px;
     text-align: left;
@@ -276,17 +275,14 @@ header ul{
     /* border: 1px solid; */
     z-index: 8;
     display: flex;
-    /* font-family: "Roboto Condensed", sans-serif; */
     justify-content: center;
-    position: relative;
-    top: 20px;
 }
 .subarea{
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     background-color: #05203C;
-    width: 1260px;
+    width: 1304px;
     height: 160px;
     border-radius: 5px;
     color: #FFF;
@@ -323,13 +319,11 @@ header ul{
     position: absolute;
     top: 100px;
     left: 23px;
-    /* font-family: "Noto Sans", sans-serif; */
     font-size: 14px;
 }
 .checking, .filt{
     display: flex;
     align-items: center;
-    /* font-family: "Noto Sans", sans-serif; */
 }
 .checking{
     gap: 20px;
@@ -352,13 +346,9 @@ input[type="date"]{
     color: #FFF;
     padding: 0px;
     margin: 0px;
-    /* font-family: "Noto Sans", sans-serif; */
     font-size: 12px;
     font-weight: 700;
 }
-/* .where, .in, .on, .guest{
-    border: 1px solid;
-} */
 .where{
     width: 590px;
 }
@@ -369,7 +359,7 @@ input[type="date"]{
     width: 180px;
 }
 .guest{
-    width: 230px;
+    width: 200px;
 }
 .down{
     position: relative;
@@ -380,7 +370,6 @@ input[type="date"]{
     top: 110px;
     left: 85%;
     border-radius: 12px;
-    /* font-family: "Noto Sans", sans-serif; */
     font-size: 14px;
     width: 150px;
     height: 40px;
@@ -403,7 +392,7 @@ input[type="date"]{
 }
 .inside-main2{
     /* border: 1px solid; */
-    width: 1224px;
+    width: 1304px;
 }
 .tags{
     /* border: 1px solid; */
@@ -418,7 +407,6 @@ input[type="date"]{
 .tags a{
     text-decoration: none;
     color: #000;
-    /* font-family: "Noto Sans", sans-serif; */
 }
 .ahover:hover .line{
     border: 1px solid;
@@ -441,7 +429,6 @@ input[type="date"]{
     gap: 15px;
     font-weight: 600;
     font-size: 13px;
-    /* font-family: "Noto Sans", sans-serif; */
     flex-wrap: nowrap;
 }
 .card i{
@@ -451,7 +438,6 @@ input[type="date"]{
     padding-bottom: 60px;
 }
 .brands{
-    /* font-family: "Noto Sans", sans-serif; */
     font-size: 16px;
     padding-bottom: 70px;
 }
@@ -466,7 +452,6 @@ input[type="date"]{
 }
 .hotels-select{
     /* border: 1px solid; */
-    /* font-family: "Noto Sans", sans-serif; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -480,11 +465,9 @@ input[type="date"]{
     margin: 0px;
 }
 .cities{
-    /* padding-top: 25px; */
     /* border: 1px solid; */
     display: flex;
     gap: 10px;
-    /* padding-bottom: 50px; */
 }
 .city{
     border: 1px solid #b9b9b9;
@@ -500,14 +483,11 @@ input[type="date"]{
 }
 .scrolls{
     /* border: 1px solid; */
-    /* width: 1240px; */
     display: flex;
     gap: 10px;
     overflow: hidden;
     padding-bottom: 10px;
     padding-top: 10px;
-    /* padding-right: 10px;
-    padding-left: 10px; */
 }
 .hotels-card{
     border-radius: 24px;
@@ -522,7 +502,6 @@ input[type="date"]{
 .hotels-card a{
     text-decoration: none;
     color: #000;
-    /* font-family: "Noto Sans", sans-serif; */
 }
 .card-img img{
     border-radius: 24px 24px 0px 0px;
@@ -534,9 +513,6 @@ input[type="date"]{
     gap: 50px;
     align-items: center;
 }
-/* .hotel-rating{
-    border: 1px solid;
-} */
 .hotel-name{
     padding-top: 20px;
     padding-left: 20px;
@@ -608,9 +584,6 @@ input[type="date"]{
     font-size: 20px;
     cursor: pointer;
 }
-/* .button-left, .button-right, .scroll-balls{
-    border: 1px solid;
-} */
 .scroll-balls{
     display: flex;
     gap: 8px;
@@ -635,7 +608,6 @@ input[type="date"]{
 }
 .card1 p, .card1 h1{
     padding: 0px;
-    /* font-family: "Lato", sans-serif; */
 }
 .card1 i{
     font-size: 30px;
@@ -672,9 +644,6 @@ input[type="date"]{
     width: 200px;
     height: 200px;
 }
-/* .fags{
-    border: 1px solid;
-} */
 .btns-fags{
     display: flex;
     flex-direction: column;
@@ -702,12 +671,6 @@ input[type="date"]{
 .tuglle-up{
     height: 150px;
 }
-/* .ttx-cont{
-    display: none;
-}
-.ttx-cont-up{
-    display: block;
-} */
 .btns-fags hr{
     opacity: 0.4;
 }
@@ -793,13 +756,10 @@ footer{
     display: flex;
     gap: 70px;
     z-index: 780;
-    padding: 100px;
+    padding: 30px;
     justify-content: center;
     font-size: 12px;
-    font-family: "Arimo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Rubik", sans-serif;
 }
 .footer-root{
     display: block;
@@ -836,8 +796,8 @@ footer button{
     height: 20px;
     font-size: 10px;
     margin-top: 10px;
-    /* margin-left: 65px; */
     cursor: pointer;
+    font-family: "Rubik", sans-serif;
 }
 footer button:hover{
     background-color: #010913;
@@ -859,12 +819,11 @@ footer a{
     gap: 130px;
     font-weight: 700;
     font-family: "Lato", sans-serif;
-    /* position: relative;
-    left: 150px; */
 }
 .list-card p, .list-card a{
     margin: 0px;
     position: relative;
+    font-family: "Rubik", sans-serif;
 }
 .list-card span{
     display: flex;
@@ -877,8 +836,7 @@ footer a{
 }
 .end{
     position: relative;
-    /* top: 315px; */
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Lato", sans-serif;
     letter-spacing: 0.5px;
 }
@@ -940,7 +898,6 @@ footer a{
     padding-left: 20px;
 }
 .dropdown-footer.active{
-    /* display: block; */
     visibility: visible;
     height: 200px;
 }
@@ -958,4 +915,13 @@ footer a{
 }
 .fa-chevron-up{
     transform: rotate(180deg);
+}
+/* language-section */
+.international{
+    border: 1px solid;
+    padding: 100px;
+}
+.international span{
+    border: 1px solid;
+    padding: 10px;
 }
