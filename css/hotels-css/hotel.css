@@ -308,11 +308,111 @@ header ul{
     border-radius:12px 0px 0px 12px ;
     border: none;
 }
-.inpts select{
-    border: none;
-    width: 250px;
-    padding: 15px;
+.styled-select{
+    /* border: 1px solid; */
+    width: 260px;
+    padding: 23.5px;
     border-radius: 0px 12px 12px 0px;
+    background-color: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+.content-select{
+    color: #000;
+    position: absolute;
+    top: -3px;
+}
+.dropdown-select{
+    display: none;
+    z-index: 9999;
+    color: #000;
+    position: absolute;
+    top: 70px;
+    left: 900px;
+    width: 450px;
+    height: 250px;
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* display: none; */
+}
+.dropdown-select-up{
+    display: block;
+}
+.angle-span{
+    width: 100%;
+    position: absolute;
+    font-size: 60px;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+.main-drop{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.done{
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+.done p{
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    color: #000;
+}
+.done p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.done p:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.drp1, .tap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drp1 p{
+    display: flex;
+    gap: 10px;
+}
+.drp1{
+    border-bottom: 1px solid #d1d1d1;
+}
+.ttxt{
+    /* border: 1px solid; */
+    padding: 15px;
+    width: 10px;
+}
+.drp1 button{
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #E0E4E9;
+    cursor: pointer;
+}
+.caret-down-span-select{
+    position: absolute;
+    /* border: 1px solid #000; */
+    color: #000;
+    left: 270px;
+    top: 15.5px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
 }
 .filter{
     display: flex;
@@ -400,6 +500,7 @@ input[type="date"]{
     display: flex;
     gap: 7px;
     align-items: center;
+
 }
 .tags i, .tags p{
     opacity: 0.5;

@@ -257,3 +257,30 @@ menu_item.forEach((item, index)=>{
         fa_chevron_down[index].classList.toggle("fa-chevron-up")
     })
 })
+
+
+const styled_select = document.querySelector(".styled-select")
+const dropdown_select = document.querySelector(".dropdown-select")
+const plusBtn = document.querySelectorAll(".increase")
+const minusBtn = document.querySelectorAll(".decrease")
+const ttxt = document.querySelector(".ttxt")
+let Adultcount = 0
+styled_select.addEventListener("click", ()=>{
+    dropdown_select.classList.toggle("dropdown-select-up")
+                plusBtn.forEach((pl)=>{
+                pl.addEventListener('click',()=>{
+                console.log("Clicked")
+                Adultcount++
+                ttxt.textContent=Adultcount
+                console.log(Adultcount)
+            })
+            })
+            minusBtn.forEach((mn)=>{
+                mn.addEventListener('click',()=>{
+                console.log("Clicked")
+                Adultcount--
+                ttxt.textContent=Adultcount
+                console.log(Adultcount)
+            })
+            })
+})

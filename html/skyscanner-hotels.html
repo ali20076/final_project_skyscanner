@@ -69,11 +69,43 @@
                         <li class="searching"><input type="date" class="time"></li>
                         <li class="searching"><input type="date" class="time"></li>
                         <li>
-                            <select>
-                                <option>Adults</option>
-                                <option>Children</option>
-                                <option>Rooms</option>
-                            </select>
+                            <div class="styled-select">
+                                <span class="content-select"><p>2 adults, 1 room</p></span>
+                                <span class="caret-down-span-select">
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </span>
+                              
+                            </div>
+                              <div class="dropdown-select">
+                                    <span class="angle-span"><i class="fa-solid fa-caret-up"></i></span>
+                                    <div class="main-drop">
+                                        <div class="drp1">
+                                            <p><i class="fa-solid fa-person"></i>Adult</p>
+                                            <div class="tap">
+                                                <button class="decrease" id="adultsMinus"><i class="fa-solid fa-minus"></i></button>
+                                                <span class="ttxt" id="adultCount"></span>
+                                                <button class="increase" id="adultplus"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="drp1">
+                                            <p><i class="fa-solid fa-person"></i>Children</p>
+                                            <div class="tap">
+                                                <button class="decrease"><i class="fa-solid fa-minus"></i></button>
+                                                <span class="ttxt"></span>
+                                                <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="drp1">
+                                            <p><i class="fa-solid fa-key"></i>Rooms</p>
+                                            <div class="tap">
+                                                <button class="decrease"><i class="fa-solid fa-minus"></i></button>
+                                                <span class="ttxt"></span>
+                                                <button class="increase"><i class="fa-solid fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="done"><p>Done</p></span>
+                                </div>  
                         </li>
                     </ul>
                     <div class="subtitles">
