@@ -198,14 +198,14 @@ fetch('../json/titles.json')
         card_span.innerHTML = `
             <div class="str">
             <div class="column1">
-            <span>${item.column1}</span>
-            <span>${item.column2}</span>
-            <span>${item.column3}</span>
+            <span><p>${item.column1}</p></span>
+            <span><p>${item.column2}</p></span>
+            <span><p>${item.column3}</p></span>
             </div>
             <div class="column2">
-            <span>${item.column4}</span>
-            <span>${item.column5}</span>
-            <span>${item.column6}</span>
+            <span><p>${item.column4}</p></span>
+            <span><p>${item.column5}</p></span>
+            <span><p>${item.column6}</p></span>
             </div>
             </div>
         `
@@ -235,6 +235,7 @@ function closeLogin() {
 
 login.forEach((log)=>{
     log.addEventListener("click",()=>{
+        strype.style.display="block"
         openLogin()
     })
 })
@@ -263,11 +264,13 @@ const styled_select = document.querySelector(".styled-select")
 const dropdown_select = document.querySelector(".dropdown-select")
 const plusBtn = document.querySelectorAll(".increase")
 const minusBtn = document.querySelectorAll(".decrease")
-const ttxt = document.querySelector(".ttxt")
+const ttxt = document.querySelector("#adultCount", "adultCount1", "adultCount2")
+const done = document.querySelector(".done")
 let Adultcount = 0
 styled_select.addEventListener("click", ()=>{
     dropdown_select.classList.toggle("dropdown-select-up")
-                plusBtn.forEach((pl)=>{
+    dropdown_select.style.display="block"
+         plusBtn.forEach((pl)=>{
                 pl.addEventListener('click',()=>{
                 console.log("Clicked")
                 Adultcount++
@@ -283,4 +286,26 @@ styled_select.addEventListener("click", ()=>{
                 console.log(Adultcount)
             })
             })
-})
+    })
+            done.addEventListener("click",()=>{
+                dropdown_select.style.display = "none"
+            })
+
+
+fetch('../json/language-word.json')
+  .then(response => response.json())
+  .then(data => {
+    const languages_word = document.querySelector(".languages-word");
+
+    data.languages.forEach(lang => {
+      const card = document.createElement("div");
+      card.className = "card-language";
+      card.innerHTML = `
+        <span>
+          <p><img src="${lang.url}"> ${lang.name}</p>
+        </span>
+      `;
+      languages_word.appendChild(card);
+    });
+  })
+  .catch(error => console.error("Error for loading file of JSON:", error));

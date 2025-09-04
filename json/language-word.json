@@ -1,7 +1,114 @@
 {
-    "eng":"hotels",
-    "fin":"hotellit",
-    "irl":"hotels",
-    "nid":"Hotels",
-    "sp":"Hoteles baratos"
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "url": "../img/flags-datas/uk.png"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "url": "../img/flags-datas/fr.png"
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "url": "../img/flags-datas/de.png"
+    },
+    {
+      "code": "sp",
+      "name": "Hoteles baratos",
+      "url": "../img/flags-datas/es.png"
+    },
+    {
+      "code": "ua",
+      "name": "Hotels Deals in Popular Cities",
+      "url": "../img/flags-datas/ae.png"
+    },
+    {
+      "code":"au",
+      "name":"Hotels",
+      "url":"../img/flags-datas/au.png"
+    },
+    {
+      "code":"fr",
+      "name":"Hôtels",
+      "url":"../img/flags-datas/fr.png"
+    },
+    {
+        "code":"it",
+        "name":"Hotel",
+        "url":"../img/flags-datas/it.png"
+    },
+    {
+        "code":"nr",
+        "name":"Hotell",
+        "url":"../img/flags-datas/no.png"
+    },
+    {
+        "code":"it",
+        "name":"Hotel",
+        "url":"../img/flags-datas/it.png"
+    },
+    {
+        "code":"sw",
+        "name":"Hotell",
+        "url":"../img/flags-datas/ch.png"
+    },
+    {
+        "code":"usa",
+        "name":"Hotels Deals in Popular Cities",
+        "url":"../img/flags-datas/us.png"
+    },
+    {
+        "code":"ch",
+        "name":"酒店",
+        "url":"../img/flags-datas/cn.png"
+    },
+    {
+        "code":"de",
+        "name":"Hotels",
+        "url":"../img/flags-datas/de.png"
+    },
+    {
+        "code":"ja",
+        "name":"ホテル",
+        "url":"../img/flags-datas/jp.png"
+    },
+    {
+        "code":"pl",
+        "name":"Hotele",
+        "url":"../img/flags-datas/pl.png"
+    },
+    {
+        "code":"swt",
+        "name":"Hotels",
+        "url":"../img/flags-datas/se.png"
+    },
+    {
+        "code":"dn",
+        "name":"Hoteller",
+        "url":"../img/flags-datas/dk.png"
+    },
+    {
+        "code":"id",
+        "name":"Hotels",
+        "url":"../img/flags-datas/ie.png"
+    },
+    {
+        "code":"mex",
+        "name":"Hoteles",
+        "url":"../img/flags-datas/mx.png"
+    },
+    {
+        "code":"ru",
+        "name":"Отели",
+        "url":"../img/flags-datas/ru.png"
+    },
+    {
+        "code":"tr",
+        "name":"Oteller",
+        "url":"../img/flags-datas/tr.png"
+    }
+    ]
 }
