@@ -59,14 +59,6 @@
       "amenities": ["Wi‑Fi", "Historic quarters", "Rooftop terrace", "Air conditioning"]
     },
     {
-      "name": "Chic Riverfront Hotel",
-      "city": "Amsterdam, Netherlands",
-      "price_per_night": 160,
-      "rating": 4.7,
-      "image_url": "../img/image-hotels/instanbul.webp",
-      "amenities": ["Wi‑Fi", "Canal view", "Bike rental", "Breakfast buffet"]
-    },
-    {
       "name": "Modern Loft Retreat",
       "city": "Lisbon, Portugal",
       "price_per_night": 125,

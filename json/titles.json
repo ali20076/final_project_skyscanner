@@ -40,8 +40,54 @@
     "column4":"Cheap 3-star hotels deals in Dublin",
     "column5":"3-star hotels deals in London",
     "column6":"Cheap 3-star hotels deals in Amsterdam"
+},
+{
+    "column1":"Book 5-star hotels deals in Barcelona",
+    "column2":"Book 5-star hotels deals in Dubai",
+    "column3":"Book 5-star hotels in Manchester",
+    "column4":"5-star hotels deals in Banghok",
+    "column5":"Cheap 5-star hotels deals in Amsterdam",
+    "column6":"5-star hotels deals in London"
+},
+{
+    "column1":"Cheap 5-star hotels deals in Paris",
+    "column2":"Book 5-star hotels deals in Milan",
+    "column3":"Cheap 3-star hotels in New York",
+    "column4":"Cheap 3-star hotels deals in Paris",
+    "column5":"Book 3-star hotels deals in Milan",
+    "column6":"Book 3-star hotels deals in Banghok"
+},
+{
+    "column1":"3-star hotels deals in Barcelona",
+    "column2":"3-star hotels deals in Dubai",
+    "column3":"Cheap 3-star hotels in Manchester",
+    "column4":"Cheap 3-star hotels deals in Dublin",
+    "column5":"3-star hotels deals in London",
+    "column6":"Cheap 3-star hotels deals in Amsterdam"
+},
+{
+    "column1":"Book 5-star hotels deals in Barcelona",
+    "column2":"Book 5-star hotels deals in Dubai",
+    "column3":"Book 5-star hotels in Manchester",
+    "column4":"5-star hotels deals in Banghok",
+    "column5":"Cheap 5-star hotels deals in Amsterdam",
+    "column6":"5-star hotels deals in London"
+},
+{
+    "column1":"Cheap 5-star hotels deals in Paris",
+    "column2":"Book 5-star hotels deals in Milan",
+    "column3":"Cheap 3-star hotels in New York",
+    "column4":"Cheap 3-star hotels deals in Paris",
+    "column5":"Book 3-star hotels deals in Milan",
+    "column6":"Book 3-star hotels deals in Banghok"
+},
+{
+    "column1":"3-star hotels deals in Barcelona",
+    "column2":"3-star hotels deals in Dubai",
+    "column3":"Cheap 3-star hotels in Manchester",
+    "column4":"Cheap 3-star hotels deals in Dublin",
+    "column5":"3-star hotels deals in London",
+    "column6":"Cheap 3-star hotels deals in Amsterdam"
 }
-
 ]
-
 }

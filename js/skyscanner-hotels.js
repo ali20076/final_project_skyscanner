@@ -133,11 +133,11 @@ function updateButtons1() {
     })
     // second-type
     button_left1.addEventListener("click",()=>{
-    scroll_balls1.scrollLeft -=2100
+    scroll_balls1.scrollLeft -=2250
     updateButtons1()
     })
     button_right1.addEventListener("click",()=>{
-    scroll_balls1.scrollLeft +=2100
+    scroll_balls1.scrollLeft +=2250
     updateButtons1()
     })
 
@@ -157,11 +157,11 @@ function updateButtons1() {
     ball1.forEach((bll1, index)=>{
         bll1.addEventListener("click", ()=>{
             if(index === 0){
-                scroll_balls1.scrollLeft -=2100
+                scroll_balls1.scrollLeft -=2250
                 bll1.style.opacity="0.5"
             }
             else{
-                scroll_balls1.scrollLeft +=2100
+                scroll_balls1.scrollLeft +=2250
                 bll1.style.opacity="1"
             }
         })
@@ -309,3 +309,17 @@ fetch('../json/language-word.json')
     });
   })
   .catch(error => console.error("Error for loading file of JSON:", error));
+
+//   options settings
+const left_arrow = document.querySelector(".left-arrow")
+const right_arrow = document.querySelector(".right-arrow")
+const balls = document.querySelector(".balls")
+const ball_option = document.querySelectorAll(".ball-option")
+const open_files = document.querySelector(".open-files")
+
+left_arrow.addEventListener("click", ()=>{
+    open_files.scrollLeft -= 1700
+})
+right_arrow_arrow.addEventListener("click", ()=>{
+    open_files.scrollLeft += 1700
+})
