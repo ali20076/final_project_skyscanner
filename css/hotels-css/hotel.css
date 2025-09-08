@@ -1043,7 +1043,7 @@ footer a{
 }
 .dropdown-footer.active{
     visibility: visible;
-    height: 200px;
+    height: 210px;
 }
 .list-card > div:hover .dropdown-footer {
     display: flex;

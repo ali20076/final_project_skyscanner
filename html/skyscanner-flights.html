@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -51,58 +54,93 @@
     <div class="main1">
         <div class="inside">
                 <img src="/img/logos/Large-Flights-hero-2.jpg">
+                
                 <span class="ubuntu">
                     <h1>Find the best flight deals anywhere</h1>
                 <div class="search-main">
                     <div class="subarea">
-                        <div class="inpts">
-                    <ul>
-                        <li class="searching"><input type="text" placeholder="Enter a destination or hotel name"></li>
-                        <li class="searching"><input type="date" class="time"></li>
-                        <li class="searching"><input type="date" class="time"></li>
-                        <li>
-                            <select>
-                                <option>Adults</option>
-                                <option>Children</option>
-                                <option>Rooms</option>
-                            </select>
-                        </li>
-                    </ul>
-                    <div class="subtitles">
-                        <ul>
-                        <li class="where"><p>Where do want to go?</p></li>
-                        <li class="in"><p>Check-in</p></li>
-                        <li class="on"><p>Check-out</p></li>
-                        <li class="guest"><p>Guests and rooms</p></li>
-                    </ul>
+                    <div class="elements-subarea">
+                            <div class="return">
+                            <p>One way<i class="fa-solid fa-chevron-down"></i></p>
+                            </div>
+                            <div class="selections">
+                                <div class="text-from">
+                                    <p class="pi">From</p>
+                                    <span class="ttxt">Country, city or airport</span>
+                                </div>
+                                <div class="text-to">
+                                    <p class="pi">To</p>
+                                    <span class="ttxt">Country, city or airport</span>
+                                </div>
+                                <div class="text-depart">
+                                    <p class="pi">Depart</p>
+                                    <span class="ttxt">13/09/2025</span>
+                                </div>
+                                <div class="text-travellers">
+                                    <p class="pi">Travellers and cabin class</p>
+                                    <span class="ttxt">1 Adult, Economy</span>
+                                </div>
+                                <button>Search</button>
+                            </div>
+                            <div class="checking">
+                                <span id="q1"><input type="checkbox"><p>Add nearby airports</p></span>
+                                <span id="q2"><input type="checkbox"><p>Add nearby airports</p></span>
+                                <span><input type="checkbox"><p>Direct flights</p></span>
+                            </div>
                     </div>
-                </div>
-                <div class="down">
-                    <div class="filter">
-                    <p>Popular filters:</p>
-                    <span class="checking">
-                        <div class="filt">
-                            <input type="checkbox">
-                            <p>Free cancellation</p>
-                        </div>
-                        <div class="filt">
-                            <input type="checkbox">
-                            <p>4 stars +</p>
-                        </div>
-                        <div class="filt">
-                            <input type="checkbox">
-                            <p>3 stars</p>
-                        </div>
-                    </span>
-                    </div>
-                <button style="font-weight: 800;">
-                    <a href="#">Search</a>
-                </button>
-                </div>
                     </div>
                 </div>
                 </span>
+                <svg viewBox="0 0 14832 55" class="bpk-flare-bar_bpk-flare-bar__curve__ODQ2Y">
+                    <path d="M7501.307 8.517l-68.043 39.341c-10.632 6.185-23.795 6.185-34.528 0l-68.144-39.34c-8.91-5.173-18.988-8.215-29.316-8.518H0v55h14832V0H7530.671a63.604 63.604 0 00-29.364 8.517z" fill="white">
+                    </path>
+                </svg>
         </div>
-    </div>
+        <div class="main2">
+            <div class="main2-inside">
+                <div class="home">
+                <span>
+                    <p><span class="underline-hover">Home</span><i class="fa-solid fa-caret-right"></i><span class="fl">Flights</span></p>
+                </span>
+                </div>
+                <div class="cards-first-type">
+                    <div class="card-first-type">
+                        <span><i class="fa-solid fa-plane-up"></i></span>
+                        <span>
+                            <p>
+                                Explore the best flight deals from anywhere, to everywhere, then book with no fees
+                            </p>
+                        </span>
+                    </div>
+                    <div class="card-first-type">
+                        <span><i class="fa-solid fa-calendar-days"></i></span>
+                        <span>
+                            <p>
+                                Compare flight deals from over 1000 providers, and choose the cheapest, fastest or lowest-emission tickets
+                            </p>
+                        </span>
+                    </div>
+                    <div class="card-first-type">
+                        <span><i class="fa-solid fa-tag"></i></span>
+                        <span>
+                            <p>
+                                Find the cheapest month - or even day - to fly, and set up Price Alerts to book when the price is right
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="data-flights">
+                    <span>
+                        <h1>Flight deals from Azerbaijan</h1>
+                        <p>Here are the flight deals with the lowest prices. Act fast – they all depart within the next three months.</p>
+                    </span>
+                    <div class="datas">
+                        <!-- data-jsons -->
+                    </div>
+                    <button><a href="#">See more deals<i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+    <script src="../js/flight.js"></script>
 </body>
 </html>

@@ -16,9 +16,6 @@ fetch('../json/datahotels.json')
             <span class="span-1">${item.name}</span>
             <span class="span-2">${item.distations} km from city </span>
         </div>
-        <div class="hotel-rating">
-            <span class="rating-span">Icon</span>
-        </div>
         </div>
         <div class="hotel-reviews">
             <span class="rating1">
@@ -60,9 +57,6 @@ fetch(`../json/datahotels2.json`)
         <div class="sub">
         <div class="hotel-name">
             <span class="span-2">${item.city}</span>
-        </div>
-        <div class="hotel-rating">
-            <span class="rating-span">Icon</span>
         </div>
         </div>
         <div class="hotel-reviews">
