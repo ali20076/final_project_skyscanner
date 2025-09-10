@@ -318,6 +318,7 @@ header ul{
     background-color: #FFF;
     color: #000;
     cursor: pointer;
+    z-index: 8;
 }
 .rotation:hover{
     background-color: #E0E4E9;
@@ -335,6 +336,20 @@ header ul{
 }
 .text-to{
     width: 255px;
+}
+.text-to-up{
+    transform: translateX(278px);
+    border-radius: 0px;
+}
+.text-from-up{
+    transform: translateX(-278px);
+    border-radius: 12px 0px 0px 12px;
+}
+.fa-arrows-turn-to-dots{
+    transition: all 0.8s ease;
+}
+.fa-arrows-turn-to-dots-up{
+    transform: rotate(360deg);
 }
 .text-travellers{
     border-radius: 0px 12px 12px 0px;
@@ -399,7 +414,7 @@ header ul{
     /* border: 1px solid; */
     width: 100%;
     position: absolute;
-    top: 700px;
+    top: 760px;
     display: flex;
     justify-content: center;
     flex-direction: column;

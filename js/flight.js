@@ -83,34 +83,15 @@ menu_item.forEach((item, index)=>{
     })
 })
 
+const changeable = document.querySelectorAll(".rotation")
+const inpt1 = document.querySelector(".text-from")
+const inpt2 = document.querySelector(".text-to")
+const fa_arrows_turn_to_dots = document.querySelector(".fa-arrows-turn-to-dots")
 
-const styled_select = document.querySelector(".styled-select")
-const dropdown_select = document.querySelector(".dropdown-select")
-const plusBtn = document.querySelectorAll(".increase")
-const minusBtn = document.querySelectorAll(".decrease")
-const ttxt = document.querySelector("#adultCount", "adultCount1", "adultCount2")
-const done = document.querySelector(".done")
-let Adultcount = 0
-styled_select.addEventListener("click", ()=>{
-    dropdown_select.classList.toggle("dropdown-select-up")
-    dropdown_select.style.display="block"
-         plusBtn.forEach((pl)=>{
-                pl.addEventListener('click',()=>{
-                console.log("Clicked")
-                Adultcount++
-                ttxt.textContent=Adultcount
-                console.log(Adultcount)
-            })
-            })
-            minusBtn.forEach((mn)=>{
-                mn.addEventListener('click',()=>{
-                console.log("Clicked")
-                Adultcount--
-                ttxt.textContent=Adultcount
-                console.log(Adultcount)
-            })
-            })
+changeable.forEach((oop, index)=>{
+    oop.addEventListener("click", ()=>{
+        inpt1.classList.toggle("text-to-up")
+        inpt2.classList.toggle("text-from-up")
+        fa_arrows_turn_to_dots.classList.toggle("fa-arrows-turn-to-dots-up")
     })
-            done.addEventListener("click",()=>{
-                dropdown_select.style.display = "none"
-            })
+})
