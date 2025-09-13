@@ -828,6 +828,10 @@ input[type="date"]{
     overflow: hidden;
     /* border: 1px solid; */
     gap: 60px;
+    scroll-behavior: unset;
+}
+.ball-option{
+    cursor: pointer;
 }
 .str{
     display: flex;

@@ -330,6 +330,13 @@ header ul{
     padding-left: 10px;
     padding-right: 10px;
 }
+.text-from input, .text-to input, .text-depart input, .text-travellers input{
+    width: 255px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    top: -5px;
+}
 .text-from{
     border-radius: 12px 0px 0px 12px;
     width: 255px;

@@ -125,6 +125,13 @@ header{
     height: 40px;
     color: #FFF;
 }
+.btn a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+}
 .btn:hover{
     background-color: rgb(95, 95, 120);
     border: 1px solid rgb(95, 95, 120);
@@ -299,6 +306,9 @@ header{
     height: 500px;
     padding-top: 50px;
     position: relative;
+}
+.adverstment a{
+    text-decoration: none;
 }
 .adverstment img{
     width: 1220px;

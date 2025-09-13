@@ -258,7 +258,7 @@ const styled_select = document.querySelector(".styled-select")
 const dropdown_select = document.querySelector(".dropdown-select")
 const plusBtn = document.querySelectorAll(".increase")
 const minusBtn = document.querySelectorAll(".decrease")
-const ttxt = document.querySelector("#adultCount", "adultCount1", "adultCount2")
+const ttxt = document.querySelector(".ttxt")
 const done = document.querySelector(".done")
 let Adultcount = 0
 styled_select.addEventListener("click", ()=>{
@@ -270,6 +270,7 @@ styled_select.addEventListener("click", ()=>{
                 Adultcount++
                 ttxt.textContent=Adultcount
                 console.log(Adultcount)
+                zero()
             })
             })
             minusBtn.forEach((mn)=>{
@@ -278,6 +279,7 @@ styled_select.addEventListener("click", ()=>{
                 Adultcount--
                 ttxt.textContent=Adultcount
                 console.log(Adultcount)
+                zero()
             })
             })
     })
@@ -285,6 +287,14 @@ styled_select.addEventListener("click", ()=>{
                 dropdown_select.style.display = "none"
             })
 
+
+            function zero(){
+                if(ttxt.textContent < 0){
+                    console.error("Menfi sayi olmur")
+                    ttxt.textContent = 0
+                    minusBtn.style.cursor ="disable"
+                }
+            }
 
 fetch('../json/language-word.json')
   .then(response => response.json())
@@ -305,24 +315,10 @@ fetch('../json/language-word.json')
   .catch(error => console.error("Error for loading file of JSON:", error));
 
 //   options settings
-const left_arrow = document.querySelector(".left-arrow")
-const right_arrow = document.querySelector(".right-arrow")
-const balls = document.querySelector(".balls")
-const ball_option = document.querySelectorAll(".ball-option")
-const open_files = document.querySelector(".open-files")
-
-left_arrow.addEventListener("click", ()=>{
-    open_files.scrollLeft -= 1700
-})
-right_arrow_arrow.addEventListener("click", ()=>{
-    open_files.scrollLeft += 1700
-})
-
-
 const login_blur = document.querySelector(".login-blur")
-const item = document.querySelector(".item")
+const login1 = document.querySelector(".login")
 login_blur.style.display = "none"
-item.addEventListener("click", ()=>{
+login1.addEventListener("click", ()=>{
         login_blur.style.display = "flex"
         const login = document.createElement("div")
         login.className = "login"
@@ -351,5 +347,31 @@ item.addEventListener("click", ()=>{
             login.innerHTML=``
             login.style.display = "none"
             login_blur.style.display = "none"
+        })
+    })
+
+    const openfiles = document.querySelector(".open-files")
+    const selectbooks = document.querySelector(".select-books")
+    const leftarrow = document.querySelector(".left-arrow")
+    const rightarrow = document.querySelector(".right-arrow")
+    const balloption = document.querySelectorAll(".ball-option")
+
+    leftarrow.addEventListener("click",()=>{
+    openfiles.scrollLeft -=8500
+    updateButtons()
+    })
+    rightarrow.addEventListener("click",()=>{
+    openfiles.scrollLeft +=8500
+    updateButtons()
+    })
+
+    balloption.forEach((bllopt, index)=>{
+        bllopt.addEventListener("click", ()=>{
+            if(index === 0){
+                openfiles.scrollLeft -=8500
+            }
+            else{
+                openfiles.scrollLeft +=8500
+            }
         })
     })
