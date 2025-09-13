@@ -1,184 +1,130 @@
 {
     "cities":
     [
-        {
-            "img":"../img/image-flights/Istanbul.avif",
-            "city": "Istanbul",
-            "country": "Turkey",
-            "flights": [
-              {
-                "date": "Wed, 15 Oct",
-                "route": "GYD - IST",
-                "airline": "Azerbaijan Airlines",
-                "type": "Direct"
-              },
-              {
-                "date": "Sat, 29 Nov",
-                "route": "IST - GYD",
-                "airline": "Azerbaijan Airlines",
-                "type": "Direct"
-              }
-            ],
-            "from_price": 123
+  {
+    "img":"../img/image-flights/Istanbul.avif",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "date": "Wed, 15 Oct",
+    "route": "GYD - IST",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Sat, 29 Nov",
+    "route1": "IST - GYD",
+    "airline1": "Azerbaijan Airlines",
+    "type1": "Direct",
+    "from_price": 123
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/Aktau.jpg",
     "city": "Aktau",
     "country": "Kazakhstan",
-    "flights": [
-      {
-        "date": "Fri, 3 Oct",
-        "route": "GYD - SCO",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Sun, 5 Oct",
-        "route": "SCO - GYD",
-        "airline": "FlyArystan",
-        "type": "Direct"
-      }
-    ],
+    "date": "Fri, 3 Oct",
+    "route": "GYD - SCO",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Sun, 5 Oct",
+    "route1": "SCO - GYD",
+    "airline1": "FlyArystan",
+    "type1": "Direct",
     "from_price": 156
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/Kuwait_City_Skyline_1.jpg",
     "city": "Kuwait",
     "country": "Kuwait",
-    "flights": [
-      {
-        "date": "Tue, 23 Sep",
-        "route": "GYD - KWI",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Sat, 4 Oct",
-        "route": "KWI - GYD",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      }
-    ],
+    "date": "Tue, 23 Sep",
+    "route": "GYD - KWI",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Sat, 4 Oct",
+    "route1": "KWI - GYD",
+    "airline1": "Azerbaijan Airlines",
+    "type1": "Direct",
     "from_price": 161
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/budapest.jpg",
     "city": "Budapest",
     "country": "Hungary",
-    "flights": [
-      {
-        "date": "Sun, 16 Nov",
-        "route": "GYD - BUD",
-        "airline": "Wizz Air",
-        "type": "Direct"
-      },
-      {
-        "date": "Thu, 20 Nov",
-        "route": "BUD - GYD",
-        "airline": "Wizz Air",
-        "type": "Direct"
-      }
-    ],
+    "date": "Sun, 16 Nov",
+    "route": "GYD - BUD",
+    "airline": "Wizz Air",
+    "type": "Direct",
+    "date1": "Thu, 20 Nov",
+    "route1": "BUD - GYD",
+    "airline1": "Wizz Air",
+    "type1": "Direct",
     "from_price": 183
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/rome.jpeg",
     "city": "Rome",
     "country": "Italy",
-    "flights": [
-      {
-        "date": "Sun, 2 Nov",
-        "route": "GYD - FCO",
-        "airline": "Wizz Air Malta",
-        "type": "Direct"
-      },
-      {
-        "date": "Sat, 8 Nov",
-        "route": "FCO - GYD",
-        "airline": "Wizz Air Malta",
-        "type": "Direct"
-      }
-    ],
+    "date": "Sun, 2 Nov",
+    "route": "GYD - FCO",
+    "airline": "Wizz Air Malta",
+    "type": "Direct",
+    "date1": "Sat, 8 Nov",
+    "route1": "FCO - GYD",
+    "airline1": "Wizz Air Malta",
+    "type1": "Direct",
     "from_price": 191
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/tehran.webp",
     "city": "Tehran",
     "country": "Iran",
-    "flights": [
-      {
-        "date": "Mon, 22 Sep",
-        "route": "GYD - IKA",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Mon, 29 Sep",
-        "route": "IKA - GYD",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      }
-    ],
+    "date": "Mon, 22 Sep",
+    "route": "GYD - IKA",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Mon, 29 Sep",
+    "route1": "IKA - GYD",
+    "airline1": "Azerbaijan Airlines",
+    "type1": "Direct",
     "from_price": 223
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/Dammam.webp",
     "city": "Dammam",
     "country": "Saudi Arabia",
-    "flights": [
-      {
-        "date": "Fri, 24 Oct",
-        "route": "GYD - DMM",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Tue, 28 Oct",
-        "route": "DMM - GYD",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      }
-    ],
+    "date": "Fri, 24 Oct",
+    "route": "GYD - DMM",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Tue, 28 Oct",
+    "route1": "DMM - GYD",
+    "airline1": "Azerbaijan Airlines",
+    "type1": "Direct",
     "from_price": 236
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/Batumi.jpg",
     "city": "Batumi",
     "country": "Georgia",
-    "flights": [
-      {
-        "date": "Mon, 13 Oct",
-        "route": "GYD - BUS",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Fri, 17 Oct",
-        "route": "BUS - GYD",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      }
-    ],
-    "from_price": 253
+      "date": "Mon, 13 Oct",
+      "route": "GYD - BUS",
+      "airline": "Azerbaijan Airlines",
+      "type": "Direct",
+      "date1": "Fri, 17 Oct",
+      "route1": "BUS - GYD",
+      "airline1": "Azerbaijan Airlines",
+      "type1": "Direct",
+      "from_price": 253
   },
   {
-    "img":"../image-flights/Aktau.jpg",
+    "img":"../img/image-flights/Urgenc.jpg",
     "city": "Urgench",
     "country": "Uzbekistan",
-    "flights": [
-      {
-        "date": "Sat, 11 Oct",
-        "route": "GYD - UGC",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      },
-      {
-        "date": "Thu, 16 Oct",
-        "route": "UGC - GYD",
-        "airline": "Azerbaijan Airlines",
-        "type": "Direct"
-      }
-    ],
+    "date": "Sat, 11 Oct",
+    "route": "GYD - UGC",
+    "airline": "Azerbaijan Airlines",
+    "type": "Direct",
+    "date1": "Thu, 16 Oct",
+    "route1": "UGC - GYD",
+    "airline1": "Azerbaijan Airlines",
+    "type1": "Direct",
     "from_price": 295
   }
     ]

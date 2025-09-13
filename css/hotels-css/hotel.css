@@ -483,6 +483,13 @@ input[type="date"]{
     text-decoration: none;
     color: #FFF;
 }
+.inside svg{
+    position: absolute;
+    top: 520px;
+    height: 30px;
+}
+/* drop */
+
 /* main2 */
 .main2{
     /* border: 1px solid; */

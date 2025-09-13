@@ -196,14 +196,14 @@ header{
 
 }
 .inpt1 input{
-    transform: translateX(219px);
+    transform: translateX(220px);
 }
 .inpt1-up input{
     transform: translateX(0px);
     border-radius:12px 0px 0px 12px;
 }
 .inpt2 input{
-    transform: translateX(-219px);
+    transform: translateX(-220px);
     border-radius: 12px 0px 0px 12px;
 }
 .inpt2-up input{

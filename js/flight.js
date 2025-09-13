@@ -12,6 +12,8 @@ try {
 	const response = await fetch(url, options);
 	const data = await response.json();
 	console.log(data);
+
+  
 } catch (error) {
 	console.error(error);
 }
@@ -35,29 +37,37 @@ rt1.forEach((r1, index)=>{
 fetch(`../json/flights-data.json`)
  .then(response => response.json())
  .then(flights =>{
-  flights.cities.forEach((item)=>{
+    flights.cities.forEach((item)=>{
     const datas = document.querySelector(".datas")
     const watch = document.querySelector(".watch")
     const card = document.createElement("div")
     card.className="card-flight"
     card.innerHTML=`
-      <span><img src="${item.img}" style="width:100px" alt="..."></span>
+      <span class="image-flight"><img src="${item.img}" alt="..."></span>
     <div class="supp">
-      <span></span>
-      <span></span>
+      <span class="city1">${item.city}</span>
+      <span class="country2">${item.country}</span>
     </div>
     <div class="time-flight">
-      <span>
-          <img src="../img/image-flights/reklam-btn.webp" style="width:33px">
-          <h1>${flights.date}</h1>
-          <p>${item.flights.route} with ${item.flights.airline}</p>
+      <span class="date-flight">
+          <img src="../img/image-flights/reklam-btn.webp" style="width:30px">
+          <div>
+          <h1>${item.date}</h1>
+          <p>${item.route} with ${item.airline}</p>
+          </div>
+            <span class="direct-oftype">
+              ${item.type}
+             </span>
       </span>
-      <span>
-          ${item.flights.type}
-      </span>
-      <span>
-          <img src="../img/image-flights/reklam-btn.webp" style="width:33px">
-          <h1>${item.flights.date}</h1>
+      <span class="date-flight1">
+          <img src="../img/image-flights/reklam-btn.webp" style="width:30px">
+          <div>
+          <h1>${item.date1}</h1>
+          <p>${item.route1} with ${item.airline1}</p>
+          </div>
+          <span class="direct-oftype1">
+            ${item.type1}
+          </span>
       </span>
     </div>
     <div class="price">
@@ -66,7 +76,7 @@ fetch(`../json/flights-data.json`)
     `
     watch.appendChild(card)
   })
- })
+  })
 
 //  footer set
 
@@ -95,3 +105,5 @@ changeable.forEach((oop, index)=>{
         fa_arrows_turn_to_dots.classList.toggle("fa-arrows-turn-to-dots-up")
     })
 })
+
+
