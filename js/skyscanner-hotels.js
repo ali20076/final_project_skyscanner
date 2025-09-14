@@ -316,7 +316,7 @@ fetch('../json/language-word.json')
 
 //   options settings
 const login_blur = document.querySelector(".login-blur")
-const login1 = document.querySelector(".login")
+const login1 = document.querySelector(".login-up")
 login_blur.style.display = "none"
 login1.addEventListener("click", ()=>{
         login_blur.style.display = "flex"
@@ -375,3 +375,5 @@ login1.addEventListener("click", ()=>{
             }
         })
     })
+
+
